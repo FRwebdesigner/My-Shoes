@@ -15,6 +15,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    height: 1000vh;
+}
+
 .header{
     width: 96%;
     position: fixed;
@@ -78,6 +82,11 @@ html{
     border: .1rem solid rgba(0,0,0,0.3);
 }
 
+.header-active{
+    top: 0;
+    width: 100%;
+}
+
 .header .search-form.active{
     right: 2rem;
     transition: .4s linear;
@@ -102,6 +111,10 @@ html{
 
 .header .search-form label:hover{
     -webkit-text-stroke: .1rem #45c287;
+}
+
+#menu-btn{
+    display: none;
 }
 
 
