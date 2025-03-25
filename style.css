@@ -43,7 +43,6 @@ body{
     color: #219150;
 }
 
-
 .header .navbar a{
     font-size: 1.7rem;
     color: #10221b;
@@ -118,3 +117,42 @@ body{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px){
+       html{
+           font-size: 55%;
+       }
+
+       .header{
+        padding: 2rem;
+       }
+}
+
+
+
+@media (max-width: 768px){
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        border-top: .1rem solid rgba(0,0,0,0.3);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+}
