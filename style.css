@@ -138,7 +138,6 @@ body{
 }
 
 
-
 @media (max-width: 768px){
     #menu-btn{
         display: inline-block;
@@ -147,12 +146,19 @@ body{
     .header .navbar{
         position: absolute;
         top: 99%; left: 0; right: 0;
+        background: #fff;
         border-top: .1rem solid rgba(0,0,0,0.3);
+        border-bottom: .1rem solid rgba(0,0,0,0.3);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
     .header .navbar.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-
+    
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem;
+        display: block;
+    }
 }
