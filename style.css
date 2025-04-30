@@ -325,7 +325,52 @@ section{
     border-radius: 1rem 0 1rem 0;
 }
 
+.banner-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
 
+.banner-container .banner{
+    flex: 1 1 42rem;
+    overflow: hidden;
+    height: 30rem;
+    position: relative;
+}
+
+.banner-container .banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-container .banner:hover img{
+    transform: scale(1.1);
+}
+
+.banner-container .banner .content{
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    transform: translateY(-50%);
+}
+
+.banner-container .banner .content span{
+    font-size: 2rem;
+    color: #666;
+}
+
+.banner-container .banner .content h3{
+    font-size: 3.2rem;
+    color: #45c287;
+    padding-top: .5rem;
+}
+
+.banner-container .banner .content .btn span{
+    color: #fff;
+}
 
 @media (max-width: 991px){
        html{
