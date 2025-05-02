@@ -372,7 +372,91 @@ section{
     color: #fff;
 }
 
+.featured .featured-slider .slide{
+    position: relative;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+    border: .1rem solid rgba(0,0,0,0.3);
+}
 
+.featured .featured-slider .slide .discount{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    display: block;
+    height: 2.5rem;
+    width: 5rem;
+    background: #45c287;
+    color: #fff;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+
+.featured .featured-slider .slide .image{
+    width: 100%;
+    overflow: hidden;
+}
+
+.featured .featured-slider .slide .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.featured .featured-slider .slide .content{
+    padding: 1rem 1.5rem;
+    text-align: center;
+}
+
+.featured .featured-slider .slide .content h3{
+    font-size: 2rem;
+    color: #10221b;
+    font-weight: normal;
+}
+
+.featured .featured-slider .slide .content .price{
+    padding: .5rem 0;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: #10221b;
+}
+
+.featured .featured-slider .slide .content .stars{
+    font-size: 1.7rem;
+}
+
+.featured .featured-slider .slide .content .stars i{
+    color: gold;
+}
+
+.featured .featured-slider .slide .content .btn{
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    height: 4rem;
+    width: 4rem;
+    border-radius: .5rem;
+    background: #fff;
+    color: #10221b;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    border: .1rem solid rgba(0,0,0,0.3);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+    background: #10221b;
+    color: #fff;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    font-size: 1.5rem;
+}
 
 @media (max-width: 991px){
        html{
