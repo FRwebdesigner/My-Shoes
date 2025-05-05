@@ -458,6 +458,202 @@ section{
     font-size: 1.5rem;
 }
 
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+}
+
+.review .box-container .box{
+    margin: 4rem 0;
+    padding-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.review .box-container .box .image{
+    margin-top: -5rem;
+}
+
+.review .box-container .box .image img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box-container .box .content .stars i{
+    color: gold;
+    font-size: 1.7rem;
+    padding: .5rem .1rem 1rem;
+}
+
+.review .box-container .box .content h3{
+    font-size: 2rem;
+    color: #10221b;
+}
+
+
+.review .box-container .box .content p{
+    font-size: 1.4rem;
+    color: #666;
+    padding: .5rem 1.5rem;
+}
+
+.send .container{
+    background: #45c287;
+    align-items: center;
+    border-radius: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.send .container .content{
+    flex: 1 1 42rem;
+    margin: 0 3.5rem;
+    text-align: center;
+}
+
+.send .container .content .title{
+    color: #10221b;
+    font-size: 2.8rem;
+}
+
+.send .container .content p{
+    color: #fff;
+    margin: 2rem 0;
+    font-size: 1.4rem;
+}
+
+.send .container .content form{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.send .container .content form .input{
+    font-size: 1.5rem;
+    padding: 1rem 1.2rem;
+}
+
+.send .container .content form .btn{
+    margin-top: 0;
+}
+
+.send .container .image{
+    flex: 1 1 42rem;
+}
+
+.send .container .image img{
+    width: 35vw;
+    height: 60vh;
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact .row .image{
+    flex: 1 1 30rem;
+}
+
+.contact .row .image img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex: 1 1 42rem;
+    padding: 2rem;
+    border: .1rem solid rgba(0,0,0,0.3);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    border-radius: .5rem;
+}
+
+.contact .row form h3{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: #10221b;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact .row form .inputBox input{
+    width: 49%;
+}
+
+.contact .row form .inputBox input,
+.contact .row form textarea{
+    border: .1rem solid rgba(0,0,0,0.3);
+    padding: 1rem 1.2rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    color: #10221b;
+    text-transform: none;
+    margin: .7rem 0;
+} 
+
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+    width: 100%;
+}
+
+.footer{
+    background: #f4fffa;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+} 
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: #10221b;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #666;
+    line-height: 2;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.4rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color: #45c287;
+}
+
+.footer .box-container .box a i{
+    color: #10221b;
+    padding-right: .5rem;
+}
+
+.credit{
+    text-align: center;
+    background: #10221b;
+    color: #fff;
+    font-size: 2rem;
+}
+
 @media (max-width: 991px){
        html{
            font-size: 55%;
@@ -509,6 +705,14 @@ section{
         font-size: 2rem;
         margin: 2rem;
         display: block;
+    }
+
+    .send .container .content{
+        padding-top: 2rem;
+    }
+
+    .send .container .image img{
+        width: 100%;
     }
 }
 
